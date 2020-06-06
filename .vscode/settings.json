@@ -1,6 +1,7 @@
 {
     "files.defaultLanguage": "shellscript",
     "files.associations": {
-        "**": "shellscript",
+        "*": "shellscript",
+        "*.json": "json"
     }
 }
