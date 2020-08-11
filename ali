@@ -33,7 +33,7 @@ ali.dns.record.id.exact(){
     jq -r ".DomainRecords.Record[] | select(.RR == \"$2\") | .RecordId"
 }
 
-aliali.dns.record.get.exact(){
+ali.dns.record.get.exact(){
     aliyun alidns DescribeDomainRecords \
         --DomainName "$1" \
         --RRKeyWord "$2" | \
@@ -93,5 +93,9 @@ ali.config.ak(){
         --access-key-secret "$KEY"
 }
 
+ali.create.ec2(){
+    : uniq-name, image-id, security-group(if not provided, create one with same name), switch-network
+
+}
 
 
