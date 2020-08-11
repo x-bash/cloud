@@ -112,6 +112,15 @@ aws.ec2.create(){
         --count 1
 }
 
+aws.ec2.reinit(){
+    :
+}
+
+aws.ec2.create_by_other(){
+    :
+}
+
+
 # aws.ec2.create.amazon(){ aws.ec2.create ami-0d097db2fb6e0f05e "$@"; }
 # aws.ec2.create.amazon-dev(){ aws.ec2.create ami-0e1e385b0a934254a "$@"; }
 # aws.ec2.create.amazon-dev-nvidia(){ aws.ec2.create ami-09d81be6f51fdf36e "$@"; }
